@@ -13,11 +13,20 @@ set(CSNEX_SOURCES
 )
 
 set(CSNEX_RUNTIME
+    lib/file.cs
     lib/random.cs
     lib/runtime.cs
     lib/string.cs
     lib/sys.cs
     lib/textio.cs
+)
+
+set(CSNEX_RUNTIME_POSIX
+    lib/file_posix.cs
+)
+
+set(CSNEX_RUNTIME_WIN32
+    lib/file_win32.cs
 )
 
 add_custom_command(
